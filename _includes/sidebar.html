@@ -25,6 +25,13 @@
           <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
         </a>
       </li>
+      <!-- categories -->
+      <li class="nav-item{% if page.layout == 'categories' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/categories' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-stream"></i>
+          <span>Categories</span>
+        </a>
+      </li>
       <!-- blog -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
         <a href="{{ '/blog' | relative_url }}" class="nav-link">
