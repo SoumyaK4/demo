@@ -1,5 +1,19 @@
 ---
-layout: page
-script_includes:
-  - comment
+layout: default
 ---
+
+{% include lang.html %}
+
+<article class="px-1">
+  {% if page.layout == 'test' %}
+    {% assign title = page.title %}
+    <h1 class="dynamic-title">
+      {{ title }}
+    </h1>
+    <div class="content">
+      {{ content }}
+    </div>
+  {% else %}
+    {{ content }}
+  {% endif %}
+</article>
