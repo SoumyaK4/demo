@@ -119,10 +119,10 @@ comments:
     issue_term: # < url | pathname | title | ...>
   # Giscus options › https://giscus.app
   giscus:
-    repo: # <gh-username>/<repo>
-    repo_id:
-    category:
-    category_id:
+    repo: SoumyaK4/demo # <gh-username>/<repo>
+    repo_id: R_kgDONaQ2FA
+    category: General
+    category_id: DIC_kwDONaQ2FM4Clc7P
     mapping: # optional, default to 'pathname'
     strict: # optional, default to '0'
     input_position: # optional, default to 'bottom'
