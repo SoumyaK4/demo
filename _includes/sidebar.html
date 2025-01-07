@@ -22,12 +22,12 @@
       <li class="nav-item{% if page.layout == 'cv' %}{{ " active" }}{% endif %}">
         <a href="{{ '/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-home"></i>
-          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+          <span>PROFILE</span>
         </a>
       </li>
       <!-- blog -->
       <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
-        <a href="{{ '/blog' | relative_url }}" class="nav-link">
+        <a href="{{ '/blog/' | relative_url }}" class="nav-link">
           <i class="fa-fw fas fa-blog"></i>
           <span>BLOG</span>
         </a>
