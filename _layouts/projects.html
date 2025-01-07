@@ -8,7 +8,7 @@ refactor: true
 {% assign all_pinned = site.projects | where: 'pin', 'true' %}
 {% assign all_normal = site.projects | where_exp: 'item', 'item.pin != true and item.hidden != true' %}
 
-{% assign projects = all_pinned | concat: all_normal %}
+{% assign projects = '' | split: '' %}
 
 <!-- Get pinned projects on current page -->
 
@@ -35,7 +35,7 @@ refactor: true
 
 {% if normal_size > 0 %}
   {% if pinned_size > 0 %}
-    {% assign normal_start = 1 %}
+    {% assign normal_start = 0 %}
   {% else %}
     {% assign normal_start = visible_start | minus: all_pinned.size %}
   {% endif %}
