@@ -34,11 +34,11 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: your_full_name
+  name: SoumyaK4
   email: example@domain.com # change to your email address
   links:
     # The first element serves as the copyright owner's link
-    - https://twitter.com/username # change to your Twitter homepage
+    - https://soumyak4.in # change to your Twitter homepage
     - https://github.com/username # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
@@ -170,6 +170,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+  projects:
+    output: true
 
 defaults:
   - scope:
@@ -182,6 +184,14 @@ defaults:
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
       permalink: /posts/:title/
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: post
+      comments: true
+      toc: true
+      permalink: /:collection/:path/
   - scope:
       path: _drafts
     values:
